@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responseve_app/views/widget/custom_container.dart';
+import 'package:responseve_app/views/widget/item_one.dart';
 
 class CustomSliverGrid extends StatelessWidget {
   const CustomSliverGrid({super.key});
@@ -14,7 +14,7 @@ class CustomSliverGrid extends StatelessWidget {
       ),
       itemCount: 4,
       itemBuilder: (content, index) {
-        return CustomContainer();
+        return ItemOne();
       },
     );
   }
