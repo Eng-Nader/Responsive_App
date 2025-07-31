@@ -9,13 +9,18 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.menu),
+          onPressed: () {
+            
+          },
+          icon: Icon(
+            Icons.menu,
+            size: 40,
+          ),
           color: Colors.white,
         ),
         backgroundColor: Colors.black,
       ),
-      body:const HomeViewBody(),
+      body: const HomeViewBody(),
     );
   }
 }
