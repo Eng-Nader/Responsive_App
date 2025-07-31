@@ -4,20 +4,23 @@ import 'package:responseve_app/views/widget/drawer_item.dart';
 
 class CustomDrawerItemView extends StatelessWidget {
   const CustomDrawerItemView({super.key, required this.items});
-  final List<DrawerModel> items ;  
+  final List<DrawerModel> items;
 
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-            shrinkWrap: true,
-            itemCount: items.length,
-            itemBuilder: (context, index) {
-              return Padding(
-                  padding: EdgeInsets.only(
-                    top: 16,
-                  ),
-                  child: DrawerItem(drawerModel: items[index]));
-            },
-          );
+      shrinkWrap: true,
+      itemCount: items.length,
+      itemBuilder: (context, index) {
+        return Padding(
+          padding: const EdgeInsets.only(
+            top: 16,
+          ),
+          child: DrawerItem(
+            drawerModel: items[index],
+          ),
+        );
+      },
+    );
   }
 }

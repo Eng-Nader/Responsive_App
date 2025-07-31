@@ -4,9 +4,9 @@ import 'package:responseve_app/models/drawer_model.dart';
 import 'package:responseve_app/views/widget/custom_drawer_item_view.dart';
 
 class CustomDrawer extends StatelessWidget {
-  CustomDrawer({super.key});
+  const CustomDrawer({super.key});
 
-  final List<DrawerModel> items = [
+  static const List<DrawerModel> items = [
     DrawerModel(
       icon: Icons.home,
       text: 'D A S H B O A R D',
@@ -27,7 +27,7 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Drawer(
+    return const Drawer(
       backgroundColor: Color(0xffDBDBDB),
       child: Column(
         children: [
