@@ -16,13 +16,13 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scafoldKey,
-      drawer: CustomDrawer(),
+      drawer: const CustomDrawer(),
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
             scafoldKey.currentState!.openDrawer();
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.menu,
             size: 40,
           ),
@@ -34,5 +34,3 @@ class _HomeViewState extends State<HomeView> {
     );
   }
 }
-
- 

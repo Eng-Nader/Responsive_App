@@ -8,7 +8,7 @@ class ItemOne extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        color: Color(0xffB4B4B4),
+        color: const Color(0xffB4B4B4),
       ),
     );
   }

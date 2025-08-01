@@ -9,7 +9,7 @@ class CustomSliverList extends StatelessWidget {
     return SliverList.builder(
         itemCount: 10,
         itemBuilder: (context, index) {
-          return  ItemTwo(); 
+          return const ItemTwo();
         });
   }
 }
